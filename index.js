@@ -15,6 +15,9 @@ const ProductListPage 		= new Rx.Subject()
 const ProductCreatePage 	= new Rx.Subject()
 
 
+// configure, habilitamos los cors
+app.use(cors())
+
 // conexion base de datos
 mongoose.connect("mongodb://173.17.0.10:27017/portafolio", { useNewUrlParser: true })
 
