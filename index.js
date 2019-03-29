@@ -37,6 +37,7 @@ ProductListPage.subscribe( ([req, res]) => {
 	})
 })
 
+// como crear un producto
 ProductCreatePage.subscribe( ([req, res]) => {
 	const newProduct = new ProductModel({name: "Foo", cost: 2500})
 	newProduct.save()
@@ -48,7 +49,7 @@ HomePage.subscribe( ([req, res]) => {
 })
 
 IndexPage.subscribe( ([req, res]) => {
-	res.send("Hi I am home!")
+	res.send("Hi I am index!")
 })
 
 
